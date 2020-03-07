@@ -1,0 +1,11 @@
+eureka:
+  instance:
+    hostname: eureka-slave2
+  client:
+    service-url:
+      defaultZone: http://eureka-master:8761/eureka/,http://eureka-slave1:8762/eureka/
+  #自我保护机制
+  server:
+    enable-self-preservation: false
+server:
+  port: 8763
