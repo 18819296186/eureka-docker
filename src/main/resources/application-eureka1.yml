@@ -1,11 +1,12 @@
 eureka:
-  instance:
-    hostname: eureka-master
   client:
     service-url:
-      defaultZone: http://eureka-slave1:8762/eureka/,http://eureka-slave2:8763/eureka/
+      defaultZone: http://eureka2:8762/eureka/,http://eureka3:8763/eureka/
   #自我保护机制
   server:
     enable-self-preservation: false
 server:
   port: 8761
+spring:
+  application:
+    name: eureka
