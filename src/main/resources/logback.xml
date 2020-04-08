@@ -1,7 +1,7 @@
 <configuration>
 
     <appender name="GELF" class="de.siegmar.logbackgelf.GelfUdpAppender">
-        <graylogHost>192.168.31.167 </graylogHost>
+        <graylogHost>${graylog.host}</graylogHost>
         <graylogPort>12201</graylogPort>
         <maxChunkSize>508</maxChunkSize>
         <useCompression>true</useCompression>
